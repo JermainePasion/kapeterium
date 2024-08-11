@@ -63,3 +63,44 @@ body {
     padding-top: 50px; /* Adjust based on the height of the nav bar */
     font-family: 'Georgia', serif;
 }
+
+.about-us img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.about-us a{
+    text-decoration: none;
+    color: black;
+}
+
+.about {
+    color: #f7e7dc;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 2em;
+    background-color: #758694;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.footer {
+    color: #f7e7dc;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 2em;
+    background-color: #fff8f3;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+
+
