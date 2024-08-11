@@ -1,3 +1,65 @@
 h1 {
-    color: red;
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+nav {
+    background-color: #405D72;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    overflow: hidden;
+    text-align: right; 
+}
+
+nav ul li {
+    display: inline-block; 
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+nav ul li.logo {
+    float: left; /* Align the logo to the left */
+    margin-left: 0; /* Remove margin for the logo */
+    margin-right: 20px; /* Add space between logo and nav items */
+}
+
+nav ul li.logo img {
+    height: 40px; /* Adjust the height as needed */
+    vertical-align: middle; /* Align the logo vertically in the center */
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: background-color 0.4s ease, color 0.4s ease, border-radius 0.4s ease; /* Smoother transition with easing */
+}
+
+nav ul li a:hover {
+    background-color: #758694;
+    color: #F7E7DC; /* Hover text color */
+    border-radius: 15px; /* Smoother rounded corners on hover */
+}
+
+/* Add padding to the body content to prevent it from hiding under the nav bar */
+body {
+    margin: 0;
+    padding-top: 50px; /* Adjust based on the height of the nav bar */
+    font-family: 'Georgia', serif;
 }
