@@ -92,14 +92,34 @@ body {
 
 .footer {
     color: #f7e7dc;
-    height: 50vh;
+    height: 35vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; 
     align-items: center; 
     font-size: 2em;
     background-color: #fff8f3;
     padding: 20px; 
     box-sizing: border-box; 
+}
+
+.map-container {
+    position: relative;
+    padding-bottom: 0.25%; 
+    overflow: hidden;
+    max-width: 65%; 
+    width: 100%;
+    margin-left: auto; 
+}
+
+
+
+
+.footer-text {
+    font-size: 1.2vw;
+    color: #333; 
+    margin-left: 20px; 
+    align-self: flex-start; 
+    text-align: left; 
 }
 
 
