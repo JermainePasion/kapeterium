@@ -2,6 +2,10 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="kapeterium.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="kapeterium.js"></script>
     <title>Kapeterium</title>
 </head>
@@ -23,31 +27,69 @@
 
 
 
-    <div class="about">
-        <div class="about-us">
-            <img style="float: left; " src="photos/AU1.jpg" alt="Kapeterium Storefront">
-                <div style="text-align: center; font-size:2vw;">
-                    <h2 style="margin-bottom: -10px;">BUSINESS HOURS</h2>
+    <div class="container-fluid about">
+        <div class="row h-100">
+            <div class="col-md-7 d-flex align-items-center">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="photos/AU1.jpg" class="img-fluid" alt="Kapeterium Storefront">
+                        </div>
+                        <div class="slide">
+                            <img src="photos/AU2.jpg" class="img-fluid" alt="Kapeterium Storefront">
+                        </div>
+                        <div class="slide">
+                            <img src="photos/AU3.jpg" class="img-fluid" alt="Kapeterium Storefront">
+                        </div>
+                        <div class="slide">
+                            <img src="photos/AU4.jpg" class="img-fluid" alt="Kapeterium Storefront">
+                        </div>
+                </div>
+         </div>
+    </div>
+           
+            <div class="col-md-5 d-flex align-items-center justify-content-center">
+                <div class="text-content text-center">
+                    <h1 style="margin-bottom: -5px;"> <b> BUSINESS HOURS </b> </h1>
                     <p>Mon - Sat: 10am - 10pm<br>
                        Sunday: 10am - 9pm</p>
-        
-                    <h2 style="margin-bottom: -10px;">LOCATION</h2>
+            
+                    <h1 style="margin-bottom: -5px;"> <b> LOCATION </b></h1>
                     <p>Brgy. Lourdes Sur, 1242 Fajardo St.<br>
-                    (Front Lourdes Chapel), Angeles City,<br> Pampanga</p>
-                    <a href="https://www.instagram.com/kapeterium/" ><img style="max-width: 25px;" src="photos/IG.png"> KAPETERIUM</a>
-                    <a href="https://www.facebook.com/p/Kapeterium-100090098651446/"><img style="max-width: 25px;" src="photos/FB.png"> KAPETERIUM</a>
-                
+                       (Front Lourdes Chapel), Angeles City,<br> Pampanga</p>
+            
+                       <a href="https://www.instagram.com/kapeterium/" id="instagram-link" class="social-link">
+                        <img id="instagram-icon" class="social-icon" src="photos/IG.png" alt="Instagram">
+                        ‎ KAPETERIUM
+                    </a>
+                    <br>
+                    <a href="https://www.facebook.com/p/Kapeterium-100090098651446/" id="facebook-link" class="social-link">
+                        <img id="facebook-icon" class="social-icon" src="photos/FB.png" alt="Facebook">
+                        ‎ KAPETERIUM
+                    </a>
                 </div>
+            </div>
         </div>
     </div>
-    <div class="footer">
-        <p class="footer-text"><b>KAPETERIUM</b><br><br> Company  registration no: XXX-XXX-XXX-XXXXX <br><br> COPYRIGHT 2024  © Kapeterium </p><br>
+    </div>
+    <div class="container-fluid footer d-flex align-items-center justify-content-between">
         
         <div class="map-container">
-            <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15405.049235764653!2d120.5949838!3d15.1439324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f31742a510fd%3A0x694fc3bf86e23006!2sKapeterium!5e0!3m2!1sen!2sph!4v1723478622278!5m2!1sen!2sph" width="600" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="iframe-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15405.049235764653!2d120.5949838!3d15.1439324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f31742a510fd%3A0x694fc3bf86e23006!2sKapeterium!5e0!3m2!1sen!2sph!4v1723478622278!5m2!1sen!2sph" 
+                        class="iframe-responsive" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+           <div class="footer-text">
+            <p><strong>KAPETERIUM</strong><br><br> 
+            COPYRIGHT 2024 © Kapeterium</p>
         </div>
     </div>
-
+    
                 
 
 
