@@ -5,7 +5,7 @@ h1 {
 }
 
 nav {
-    background-color: #405D72;
+    background-color: #405d72;
     padding: 10px;
     position: fixed;
     top: 0;
@@ -205,3 +205,106 @@ img {
 }
 
 /* About Page*/
+
+
+/* Home screen Page */ 
+
+/* Ensure the section is fluid */
+.slider_section {
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    margin: 100;
+    padding: 0;
+}
+
+/* Remove default padding and margin from container-fluid, row, and img-box */
+.slider_section .container-fluid,
+.slider_section .row,
+.slider_section .img-box {
+    margin: 100;
+    padding: 0;
+}
+
+/* Ensure the image box is fluid */
+.img-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100;
+    padding: 0; /* Removed padding */
+}
+
+/* Ensure the image is responsive */
+.img-box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Adjust to cover if you want the image to cover the entire container */
+    display: block; /* Ensures the image does not have any margin or padding around it */
+    margin: 100 auto; /* Center the image if necessary */
+    padding: 0; 
+}
+
+
+
+/* 2nd Home screen Page*/
+
+
+/* Removing Margins*/
+.carousel {
+    margin: 100;
+    padding: 0;
+}
+
+.carousel-inner {
+    margin: 100;
+    padding: 0;
+}
+
+.carousel-item {
+    margin: 100;
+    padding: 0;
+}
+
+.carousel-control {
+    margin: 0;
+    padding: 0;
+}
+
+/* Make the carousel container fluid */
+.carousel {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure the images are fluid */
+.carousel-inner .item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Adjust the control icons for better visibility on different screens */
+.carousel-control.left, 
+.carousel-control.right {
+    width: 5%; /* Reduce the width to avoid overlapping on smaller screens */
+}
+
+/* Make the indicators responsive */
+.carousel-indicators {
+    bottom: 10px; /* Adjust the position if needed */
+}
+
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/* Optional: Adjust the size of the arrows */
+.glyphicon-chevron-left, 
+.glyphicon-chevron-right {
+    font-size: 30px; /* Adjust the size as needed */
+}
+
+
