@@ -233,3 +233,49 @@ img {
 
 
 /* About Page*/
+
+
+/* Remove margins and paddings from carousel */
+.carousel {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-inner {
+    padding: 0;
+}
+
+.carousel-item {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Optional: Adjust carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    top: 50%;
+    transform: translateY(5%);
+}
+
+/* Optional: Adjust carousel indicators */
+.carousel-indicators {
+    bottom: 10px; /* Adjust as needed */
+}
+
+.carousel-indicators li {
+    background-color: #000; /* Change to desired color */
+}
+
+.carousel-indicators .active {
+    background-color: #fff; /* Change to desired color for active indicator */
+}
+
