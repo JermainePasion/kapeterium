@@ -4,67 +4,94 @@ h1 {
     margin-top: 50px;
 }
 
-nav {
-    background-color: #405D72;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
 
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-right: 20px;
-    overflow: hidden;
-    text-align: right; 
-}
-
-nav ul li {
-    display: inline-block; 
-    margin-left: 10px;
-    border-radius: 10px;
-}
-
-nav ul li.logo {
-    float: left; /* Align the logo to the left */
-    margin-left: 0; /* Remove margin for the logo */
-    margin-right: 20px; /* Add space between logo and nav items */
-}
-
-nav ul li.logo img {
-    height: 40px; /* Adjust the height as needed */
-    vertical-align: middle; /* Align the logo vertically in the center */
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    transition: background-color 0.4s ease, color 0.4s ease, border-radius 0.4s ease; /* Smoother transition with easing */
-}
-
-nav ul li a:hover {
-    background-color: #758694;
-    color: #F7E7DC; /* Hover text color */
-    border-radius: 15px; /* Smoother rounded corners on hover */
-}
-
-/* Add padding to the body content to prevent it from hiding under the nav bar */
 body {
     margin: 0;
-    padding-top: 50px; /* Adjust based on the height of the nav bar */
     font-family: 'Georgia', serif;
 }
 
+/* Nav Bar*/
 
+.navbar {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar .navbar-brand{
+    color: #000000; /* Text color of the brand name */
+    font-weight: bold; /* Makes the brand name bold */
+    font-family: 'GloucesterProBoldExtraCondensed', sans;
+    font-stretch: condensed;
+    letter-spacing: -0.05em; /* Squeeze the text */
+    line-height: 1.2; /* Makes the text appear taller */
+}
+
+
+@font-face {
+    font-family: 'GloucesterProBoldExtraCondensed';
+    src: url('fonts/GloucesterProBoldExtraCondensed.woff2') format('woff2'),
+         url('fonts/GloucesterProBoldExtraCondensed.woff') format('woff'),
+         url('fonts/GloucesterProBoldExtraCondensed.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Ensure it stays above other content */
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 100%; /* Ensure it takes full width */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar-nav .nav-link {
+    display: inline-flex; /* Allows alignment and sizing */
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+    width: 80px; /* Set the width for equal length */
+    height: auto; /* Set the height */
+    border-radius: 10px; /* Half of the height for rounded corners */
+    background-color: #e9ecef; /* Background color for the links */
+    margin: 0 5px; /* Space between the links */
+    text-align: center; /* Center text */
+    padding: 10px 0px; /* Remove padding to control size with width and height */
+    font-size: .8rem; /* Font size */
+}
+
+.navbar-brand span {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    letter-spacing: -0.05em;
+    line-height: 0.8; /* Taller appearance */
+    color: #000000; 
+}
+.navbar-collapse {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        flex-direction: row; /* Stack items vertically on smaller screens */
+    }
+
+    .navbar-nav .nav-link {
+        width: 100%; /* Full width for each link */
+        margin: 3px 0; /* Space between items */
+    }
+
+    .navbar-collapse {
+        flex-direction: row; /* Stack items vertically */
+    }
+}
 /* About Page*/
 
 
