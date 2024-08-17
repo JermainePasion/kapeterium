@@ -97,7 +97,7 @@ body {
 
 .about {
     color: #f7e7dc;
-    height: 120vh;
+    height: 140vh;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -176,7 +176,7 @@ img {
 
 .footer {
     background-color: #f7e7dc;
-    height: 70vh;
+    height: 60vh;
     color: #f7e7dc;
     padding: 20px;
     box-sizing: border-box;
@@ -184,15 +184,6 @@ img {
 
 }
 
-.footer-text {
-    flex: 1;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px; 
-    color: #130801;
-}
 
 .map-container {
     flex: 1; 
@@ -209,6 +200,7 @@ img {
     height: 0;
     overflow: hidden;
     border-radius: 8px; 
+    margin-bottom: -50px;
 }
 
 .iframe-wrapper iframe {
@@ -230,5 +222,14 @@ img {
         padding-bottom: 75%; 
     }
 }
+
+.footer-text {
+    text-align: center;
+    font-size: 14px;
+    color: #130801;
+    background-color: #f7e7dc;
+    padding-top: 10px;
+}
+
 
 /* About Page*/
