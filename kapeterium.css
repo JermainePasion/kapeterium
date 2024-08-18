@@ -279,6 +279,156 @@ img {
     background-color: #fff; /* Change to desired color for active indicator */
 }
 
+
+/* drinks */
+
+
+
+/* Container styles for centering */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Slider styles */
+.slider {
+    width: 100%;
+    max-width: 800px; /* Maximum width to control size */
+    margin: 0 auto;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.slider img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Image container styles */
+.image-container {
+    width: 100%;
+    max-width: 800px; /* Maximum width to control size */
+    margin: 20px auto; /* Space between slider and image */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .slider, .image-container {
+        max-width: 100%; /* Full-width on smaller screens */
+    }
+
+    /* Menu Column Styles */
+.menu-column {
+    padding: 20px;
+    background-color: #F7E7DC; /* Light background for contrast */
+    border-left: 1px solid #dee2e6; /* Border for separation */
+    height: 100%; /* Ensure the column takes full height */
+}
+
+.menu {
+    font-size: 0.4rem; /* Smaller font size for the menu */
+}
+
+.menu h2 {
+    margin-bottom: 15px;
+    font-size: 1.25rem; /* Adjusted font size for heading */
+}
+
+.menu ul {
+    list-style-type: disc; /* Bulleted list */
+    padding-left: 20px; /* Space for bullets */
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+/* Background color for the entire page */
+body {
+    background-color: #f0f0f0; /* Light gray background for the page */
+    color: #000000; /* Black text color */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Set a default font */
+}
+
+/* Background color for the about section */
+.about {
+    background-color: #F7E7DC; /* White background for the container */
+    padding: 20px;
+}
+
+/* Slider styles */
+.slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Menu column styles */
+.menu-column {
+    background-color: #F7E7DC; /* Light gray background for the menu column */
+    padding: 20px;
+}
+
+/* Menu styles */
+.menu h2 {
+    margin-top: 0;
+    color: #000000; /* Black text color for headings */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 5px 0;
+    color: #000000; /* Black text color for list items */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .slider {
+        max-width: 100%; /* Full-width on smaller screens */
+    }
+    
+    .menu-column {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+}
+
+    
+
+
+
+
+
+
+/* pastries */
 .pastries {
     background-color: #f7e7dc;
     height: 140vh;
