@@ -279,3 +279,54 @@ img {
     background-color: #fff; /* Change to desired color for active indicator */
 }
 
+.pastries {
+    background-color: #f7e7dc;
+    height: 140vh;
+    font-size: 2em;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 2, 1fr);
+    grid-gap: 70px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.image-item {
+    text-align: center;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-item h3 {
+    margin: 10px 0 0;
+    font-size: 0.4em;
+}
+
+@media (max-width: 600px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media (min-width: 901px) {
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+}
