@@ -235,200 +235,221 @@ img {
 /* About Page*/
 
 
+/* Home Page */
+
 /* Remove margins and paddings from carousel */
 .carousel {
     margin: 0;
     padding: 0;
-}
+  }
 
-.carousel-inner {
+  .carousel-inner {
     padding: 0;
-}
+  }
 
-.carousel-item {
+  .carousel-item {
     margin: 0;
     padding: 0;
+    text-align: center; /* Center images horizontally */
+    width: 100%; /* Set a fixed width */
+    height: auto;
+    
+  }
+
+  .carousel-item img {
+    width: 600px; /* Set a fixed width */
+    height: auto;
+    max-height: 500px; /* Ensure height stays within limits */
+    display: block;
+    margin: 0 auto; /* Center images horizontally */
+    padding: 0;
 }
+
+  /* Optional: Adjust carousel controls */
+  .carousel-control-prev,
+  .carousel-control-next {
+      width: 5%;
+      top: 50%; /* Center controls vertically */
+      transform: translateY(-10%); /* Adjusts vertical alignment */
+      z-index: 2; /* Ensure controls appear above the images */
+  }
+  /* Optional: Adjust carousel indicators */
+  .carousel-indicators {
+    bottom: 10px; /* Adjust as needed */
+  }
+
+  .carousel-indicators li {
+    background-color: #000; /* Change to desired color */
+  }
+
+  .carousel-indicators .active {
+    background-color: #fff; /* Change to desired color for active indicator */
+  }
+
+  .slider_section {
+    width: 100%;
+    height: auto;
+    overflow: hidden; /* Prevents horizontal scrolling */
+  }
+
+  .carousel-inner .carousel-item img {
+    border: 5px solid #F7E7DC; /* Coffee brown border */
+    padding: 10px; /* Space between the image and the border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-radius: 10px; /* Slightly rounded corners for a softer look */
+}
+
+/* Optional: Add some margin to space out the images in the carousel */
+.carousel-item {
+    margin: 15px 0;
+}
+
+#sliderpage {
+    background-color: #405D72; /* Example: Dark background */
+    color: black; /* Light text for contrast */
+}
+
 
 .carousel-item img {
-    width: 100%;
+    max-width: 70%;
+    max-height: 500px;
+    width: auto;
     height: auto;
     display: block;
-    margin: 0;
+    margin: 0 auto; /* Center images horizontally */
     padding: 0;
+    border: 5px solid #8B4513; /* Coffee brown border */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-radius: 10px;
 }
 
-/* Optional: Adjust carousel controls */
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
-    top: 50%;
-    transform: translateY(5%);
+/* Home Page */
+/* Coffee Page */
+#coffee {
+    background-color: #f7e7dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-/* Optional: Adjust carousel indicators */
-.carousel-indicators {
-    bottom: 10px; /* Adjust as needed */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Creates three columns */
+    gap: 20px; /* Adjust spacing between columns */
+    width: 90%; /* Adjust the width of the container */
+    max-width: 1200px;
 }
 
-.carousel-indicators li {
-    background-color: #000; /* Change to desired color */
-}
-
-.carousel-indicators .active {
-    background-color: #fff; /* Change to desired color for active indicator */
-}
-
-
-/* drinks */
-
-
-
-/* Container styles for centering */
-.container {
+.photo-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
+    align-items: center; /* Center items horizontally */
+}
+
+.menu-container {
+    background-color: #ffffff;
+    color: #374e6b;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Slider styles */
-.slider {
-    width: 100%;
-    max-width: 800px; /* Maximum width to control size */
-    margin: 0 auto;
-    overflow: hidden; /* Prevent overflow */
+.menu-header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
-.slider img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Image container styles */
-.image-container {
-    width: 100%;
-    max-width: 800px; /* Maximum width to control size */
-    margin: 20px auto; /* Space between slider and image */
-}
-
-.image-container img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .slider, .image-container {
-        max-width: 100%; /* Full-width on smaller screens */
-    }
-
-    /* Menu Column Styles */
-.menu-column {
-    padding: 20px;
-    background-color: #F7E7DC; /* Light background for contrast */
-    border-left: 1px solid #dee2e6; /* Border for separation */
-    height: 100%; /* Ensure the column takes full height */
-}
-
-.menu {
-    font-size: 0.4rem; /* Smaller font size for the menu */
-}
-
-.menu h2 {
-    margin-bottom: 15px;
-    font-size: 1.25rem; /* Adjusted font size for heading */
-}
-
-.menu ul {
-    list-style-type: disc; /* Bulleted list */
-    padding-left: 20px; /* Space for bullets */
-}
-
-.menu li {
-    margin-bottom: 10px;
-}
-
-/* Background color for the entire page */
-body {
-    background-color: #f0f0f0; /* Light gray background for the page */
-    color: #000000; /* Black text color */
+.menu-header hr {
+    border: 0;
+    border-top: 1px solid #5b7c9c;
     margin: 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.menu-section {
+    margin-bottom: 20px;
+}
+
+.menu-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #5b7c9c;
+    padding-bottom: 5px;
+}
+
+.menu-section ul {
+    list-style: none;
     padding: 0;
-    font-family: Arial, sans-serif; /* Set a default font */
 }
 
-/* Background color for the about section */
-.about {
-    background-color: #F7E7DC; /* White background for the container */
-    padding: 20px;
-}
-
-/* Slider styles */
-.slider {
-    width: 100%;
-    position: relative;
-    overflow: hidden; /* Prevent overflow */
-}
-
-.slides {
+.menu-section ul li {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    justify-content: space-between;
+    margin-bottom: 5px;
 }
 
-.slide {
-    min-width: 100%;
+.price {
+    font-weight: bold;
 }
 
-.slide img {
+.menu-footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+.menu-footer a {
+    color: #5b7c9c;
+    text-decoration: none;
+}
+
+.menu-photo img {
     width: 100%;
     height: auto;
+    max-width: 300px; /* Adjust as needed */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Menu column styles */
-.menu-column {
-    background-color: #F7E7DC; /* Light gray background for the menu column */
-    padding: 20px;
-}
-
-/* Menu styles */
-.menu h2 {
-    margin-top: 0;
-    color: #000000; /* Black text color for headings */
-}
-
-.menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.menu li {
-    padding: 5px 0;
-    color: #000000; /* Black text color for list items */
-}
-
-/* Responsive adjustments */
+/* Mobile Styles */
 @media (max-width: 768px) {
-    .slider {
-        max-width: 100%; /* Full-width on smaller screens */
+    .main-container {
+        grid-template-columns: 1fr; /* Stack all elements vertically */
+        gap: 10px; /* Adjust spacing */
+    }
+
+    .photo-column {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center; /* Center items horizontally */
+    }
+    .menu-container {
+        max-width: 100%; /* Ensure it fits the container */
     }
     
-    .menu-column {
-        padding: 10px; /* Adjust padding for smaller screens */
+    .menu-header h1 {
+        font-size: 20px;
+    }
+
+    .menu-section h2 {
+        font-size: 16px;
+    }
+
+    .menu-footer {
+        font-size: 10px;
     }
 }
-
-
-}
-
-    
+/* Coffee Page */
 
 
 
-
-
-
-/* pastries */
+/* Pastries Page */
 .pastries {
     background-color: #f7e7dc;
     height: 140vh;
@@ -481,3 +502,4 @@ body {
     }
 }
 
+/* Pastries Page */
