@@ -503,3 +503,94 @@ img {
 }
 
 /* Pastries Page */
+
+
+/* History Page   */
+.history-container {
+    position: relative;
+}
+
+.history-bg-overlay {
+    background-color:  #ffffff;
+}
+
+.history-bg {
+    opacity: 80%;
+}
+
+.history-content {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    width: 100%;
+    align-items: center;
+}
+
+.history-text {
+    color: white;
+    padding: 2rem;
+    border-radius: 2rem;
+    height: 25rem;
+    width: 40rem;
+    font-size: 2.5vh;
+    opacity: 0;
+    transform: translateY(10rem);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.history-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.history-photos-container {
+    width: 40rem;
+    
+    
+}
+
+.history-photos {
+    margin: 1rem;
+    width: 15rem;
+    border-radius: 2rem;
+    box-sizing: border-box;
+    border: 0.1rem solid white;
+    
+}
+
+.history-photos-row1,
+.history-photos-row2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.history-heading {
+    color: rgb(250, 213, 134);
+    font-family: 'Brush Script MT', cursive;
+    
+}
+
+@media (max-width: 900px) {
+    .history-container {
+        position: relative;
+    }
+    .history-content {
+        display: block;
+        position: absolute;  
+        top: 0%;
+        padding: 1rem;
+    }
+    
+    .history-photos-container {
+        display: none; 
+    }
+
+
+    .history-text {
+        font-size: 2vh;
+    }
+}
+
+/* History Page   */

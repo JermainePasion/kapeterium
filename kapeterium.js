@@ -18,3 +18,21 @@ document.addEventListener('DOMContentLoaded', function() {
     facebookLink.addEventListener('mouseover', () => handleMouseOver(facebookLink));
     facebookLink.addEventListener('mouseout', () => handleMouseOut(facebookLink));
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const historyParagraph = document.querySelector('.history-text');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            } else {
+                entry.target.classList.remove('visible');
+            }
+        });
+    }, {
+        threshold: 0.1  // Adjust this value if needed
+    });
+
+    observer.observe(historyParagraph);
+});
