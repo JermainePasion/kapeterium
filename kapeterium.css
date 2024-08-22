@@ -508,6 +508,9 @@ img {
 /* History Page   */
 .history-container {
     position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
 }
 
 .history-bg-overlay {
@@ -515,29 +518,43 @@ img {
 }
 
 .history-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
     opacity: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 
 .history-content {
     display: flex;
     justify-content: space-around;
+    align-items: center; 
     position: absolute;
-    top: 50%;
-    bottom: 50%;
     width: 100%;
-    align-items: center;
+    height: 100%; 
+    padding: 1rem;
 }
 
 .history-text {
     color: white;
     padding: 2rem;
-    border-radius: 2rem;
-    height: 25rem;
     width: 40rem;
     font-size: 2.5vh;
     opacity: 0;
-    transform: translateY(10rem);
+    transform: translateY(6rem);
     transition: opacity 2s ease-out, transform 2s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
 }
 
 .history-text.visible {
@@ -557,8 +574,14 @@ img {
     border-radius: 2rem;
     box-sizing: border-box;
     border: 0.1rem solid white;
+    transition: transform 0.3s ease-in-out;
     
 }
+
+.history-photos:hover {
+    transform: scale(1.1); 
+}
+
 
 .history-photos-row1,
 .history-photos-row2 {
@@ -569,28 +592,16 @@ img {
 .history-heading {
     color: rgb(250, 213, 134);
     font-family: 'Brush Script MT', cursive;
+    font-size: 4rem;
     
 }
 
 @media (max-width: 900px) {
-    .history-container {
-        position: relative;
-    }
-    .history-content {
-        display: block;
-        position: absolute;  
-        top: 0%;
-        padding: 1rem;
-    }
-    
     .history-photos-container {
         display: none; 
     }
 
-
-    .history-text {
-        font-size: 2vh;
-    }
+    
 }
 
 /* History Page   */
