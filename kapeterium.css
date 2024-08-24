@@ -170,10 +170,11 @@ img {
 }
 
 .social-link:hover {
-    color: #f7e7dc; /* Change text color on hover */
+    color: #f7e7dc; 
 }
 /* About Page*/
 
+/* Footer Page*/
 .footer {
     background-color: #f7e7dc;
     height: 60vh;
@@ -181,26 +182,32 @@ img {
     padding: 20px;
     box-sizing: border-box;
     min-height: 100px;
-
-}
-
-
-.map-container {
-    flex: 1; 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.iframe-wrapper {
-    position: relative;
+.footer2 {
+    background-color: #f7e7dc;
+    height: 20vh;
+    color: #f7e7dc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.footer-text {
+    text-align: center;
     width: 100%;
-    max-width: 1000px; 
-    padding-bottom: 26.25%; 
+    margin: 0 auto; 
+    color: #000; 
+}
+.iframe-wrapper {
+    width: 70%; 
     height: 0;
-    overflow: hidden;
-    border-radius: 8px; 
-    margin-bottom: -50px;
+    padding-bottom: 28%; 
+    position: relative;
 }
 
 .iframe-wrapper iframe {
@@ -208,31 +215,23 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70%;
+    height: 100%;
     border: 0;
 }
 
 
-@media (max-width: 576px) {
-    .footer-text {
-        font-size: 1em; 
-    }
-
+@media (max-width: 768px) {
     .iframe-wrapper {
-        padding-bottom: 75%; 
+        width: 100%; 
+        padding-bottom: 70%; 
     }
 }
 
-.footer-text {
-    text-align: center;
-    font-size: 14px;
-    color: #130801;
-    background-color: #f7e7dc;
-    padding-top: 10px;
-}
 
 
-/* About Page*/
+
+
+/* Footer Page*/
 
 
 /* Home Page */
@@ -366,7 +365,7 @@ img {
 
 .menu-header hr {
     border: 0;
-    border-top: 1px solid #5b7c9c;
+    border-top: 1px solid #405D72;
     margin: 0;
     width: 50%;
     margin: 0 auto;
@@ -379,7 +378,7 @@ img {
 .menu-section h2 {
     font-size: 18px;
     margin-bottom: 10px;
-    border-bottom: 1px solid #5b7c9c;
+    border-bottom: 1px solid #405D72;
     padding-bottom: 5px;
 }
 
@@ -404,13 +403,15 @@ img {
 }
 
 .menu-footer a {
-    color: #5b7c9c;
+    color: #405D72;
     text-decoration: none;
 }
 
 .menu-photo img {
     width: 100%;
     height: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
     max-width: 300px; /* Adjust as needed */
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
